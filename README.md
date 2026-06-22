@@ -38,111 +38,50 @@ There was no centralised information within the Company. Salesforce was used to 
 
 ## 3. Methodology
 
-1. 
-
-### Phase 1 — Discovery & Requirements
-- Ran structured workshops with Sales, Finance, and Leadership to surface reporting needs, pain points, and decision-making gaps
-- Defined the quota mechanics in detail: territory structures, monthly vs quarterly cycles, tiered accelerators, and OKR scoring rules
-- Audited the existing Salesforce data model — mapping custom objects, pipeline stage definitions, and field-level data quality issues specific to Pendula's global sales motion
-
-> `Deliverables: Workshop notes · Salesforce data audit · Requirements specification`
-
-### Phase 2 — Data Extraction & Modelling
-- Built SQL queries to extract Opportunity, Account, User, and Activity data from Salesforce into Domo's data pipeline
-- Designed a clean, scalable data model with deal-level, rep-level, and time-intelligence dimensions to support all planned report views and future extensibility
-- Applied calculated fields for rolling periods, probability-weighted ARR, and NRR contribution from new logo deals
-
-> `Deliverables: SQL extraction scripts · Domo data model · Calculated field library`
-
-### Phase 3 — Dashboard Design & Build
-Built four interconnected Domo report views, each designed for a specific audience:
-
-1. **Pipeline Health Overview** *(Leadership)* — stage-by-stage waterfall, global deal velocity, and stall alerts for deals inactive 21+ days
-2. **Rep vs Quota Attainment** *(Sales Managers)* — individual drill-through with OKR scoring, commission exposure, and pacing-to-target
-3. **Rep Self-Serve View** *(Sales Reps)* — personal target progress, team ranking, and company-wide target tracker to drive accountability
-4. **Revenue Forecast** *(CFO / Finance)* — probability-weighted pipeline mapped directly to the quarterly rolling financial model
-
-> `Deliverables: Domo dashboard · UX wireframes · Measure documentation`
-
-### Phase 4 — Validation, Training & Handover
-- Ran a two-week parallel period comparing Domo outputs against the existing manual process — resolving discrepancies in stage definitions, multi-territory deal attribution, and commission edge cases
-- Delivered role-specific training sessions for Sales Reps, Sales Managers, Finance, and the Leadership team
-- Documented all data definitions, refresh schedules, and ownership rules to support long-term data governance
-
-> `Deliverables: UAT log · Role-based training materials · Governance documentation`
-
+1. **Understand the business** Workshop with Sales team to understand the sales process, current practice and the expectation on visibility and requirements for the team to take ownership and better actions.
+2. **Set up Salesforce** Validate data on Salesforce. Fill in missing data by using integration workflow with 3rd party data. Create workflow to create checkout to ensure data quality going forward.
+3. **Inject data from Salesforce to Domo**
+- Used prebuilt Salesforce Connector to extract data from Oppotunity, Account, User, Lead and Activity objects.
+- Used ETL tiles and SQL queries to create dimension and fact tables to support the creation of charts and dashboards.
+4. **Designed and built dashboards on desktop and mobile**
+- Used Beast Mode to create calculated fields.
+- Built and automated dashboards to provide sales funnels and activities visibility.
+- Enable drill in for self-served
+- Enable and rearrange chart for mobile version.
+5. **Validation and put in use**
+  
 ---
 
 ## 4. Skills Demonstrated
 
-**Data & BI**
-`Domo` `SQL` `ETL & data pipelines` `Salesforce data extraction` `Dimensional data modelling` `Dashboard UX design`
+**Domo** `data warehouse`, `ETL`, `SQL`, `Beast mode`, `Charts and Dashboard`, `App`
 
-**Finance & FP&A**
-`Revenue forecasting` `Weighted pipeline modelling` `Quota design & attainment tracking` `Commission calculation (tiered + OKR)` `SaaS metrics — ARR · NRR · ACV`
+**Salesforce CRM** `Objects` `Workflow` `Opportunity` `Account` `Lead`
 
-**CRM & Sales Ops**
-`Salesforce CRM` `Pipeline stage governance` `Sales funnel analysis` `Deal velocity & cycle time` `Territory management`
+**Sales Operations** `Sales funnel analysis` `Deal velocity & cycle time` `Territory management`
 
-**Soft Skills**
-`C-suite stakeholder management` `Business-to-data translation` `Role-based user training` `Data governance & documentation`
+**Soft Skills** `Stakeholder management` `Business-to-data translation` `Data governance & documentation`
 
 ---
 
 ## 5. Results & Business Recommendations
 
-The solution was fully adopted by Sales and Finance within the first month and became the standing view for weekly pipeline reviews and monthly board reporting. The following outcomes were measured in the first quarter post-launch.
+Creating the Sales App that acted like a space for Sales team and Leadership team to have a visibility of what was going on the business help the team to proper manage their workflow, know what to focus and easily brainstorm on their selling strategy. Salesforce became the source of truth for the business with Domo being the space to digest the information, as the result the confidence in data was boosted, making the leadership team more confident in their meetings with investors. The ability to drill down in charts and ask question help sales team saved time waiting for analytics team to work on their request. The activities and performance of each sales reps are visible for them and their managers to see to judge their performance. 
 
-### Outcomes
+The space was fully and immediately adopted by Sales and Leadership team to use in their weekly sales meeting. Finance team link their forecast to the dashboard thanks to its trustworthness of data. 
 
-**⏱ Operational efficiency**
-Eliminated 2–3 working days per month previously spent compiling pipeline reports and validating commission calculations manually. Sales Ops redirected that time to active deal support.
+<img width="524" height="257" alt="Screenshot 2026-06-22 at 5 19 58 PM" src="https://github.com/user-attachments/assets/be1392da-95e4-4c69-8fa3-8dbc9fc393fe" />
 
-**📈 Revenue impact**
-Real-time visibility into stalled deals — those inactive for 30+ days — enabled the Sales Director to intervene before opportunities were lost. Combined with improved customer usage visibility, upsell revenue grew by 15% in the quarter following launch.
-
-**🎯 Forecast accuracy**
-Probability-weighted pipeline gave Finance a credible 12-week revenue outlook for the first time. Forecast-to-actuals variance fell by an estimated 20–25%, giving the CFO reliable numbers for board-level reporting.
-
-**🧑‍💼 Rep accountability & motivation**
-Reps gained direct, self-serve visibility into their personal progress against quota, their team's trajectory, and the company's overall target. Anecdotally, this transparency drove stronger pipeline hygiene and earlier escalation of at-risk deals.
-
-**✅ Commission confidence**
-Zero disputes in two full quarters following go-live. With reps able to track their own attainment in real time, queries to Finance and Sales Ops dropped by an estimated 80%.
-
----
-
-### Business Recommendations Delivered to Leadership
-
-> **→** Introduce a structured deal review gate at Stage 3 (Proposal). Analysis showed that 61% of lost opportunities had stalled at this stage for more than 21 days without activity — making it the single highest-leverage point for Sales Manager intervention.
-
-> **→** Rebalance territory assignments. Two reps were consistently exceeding 110% of quota while two others hovered below 60% — a pattern that pointed to territory size and lead quality imbalance rather than individual performance gaps.
-
-> **→** Separate enterprise and SMB pipelines in Salesforce. Pendula's deal economics — average contract value, cycle length, and win rate — differed significantly between segments, but blended reporting was masking this and distorting the forecast.
-
-> **→** Connect the sales pipeline to Pendula's own platform data. Given that Pendula's product is built on real-time customer signals, there was a natural opportunity to use customer engagement data to trigger timely renewal and expansion conversations — closing the loop between product usage and commercial action.
+Visual 2 - Current ARR, target, % achieved, Sales funnels, Sales detaisl
+Visual 3 - Sales activities - call, demo, meetings
+Visual 4 - performance per sales reps, segmentation
 
 ---
 
 ## 6. Next Steps
 
-| Phase | Initiative | Description |
-|---|---|---|
-| **Phase 2** | Predictive close scoring | A rules-based deal health score — using activity recency, stage age, deal size, and stakeholder engagement — to surface a close probability indicator alongside the existing pipeline view |
-| **Phase 3** | Lifetime value integration | Connect new-logo ARR from closed-won deals into the customer LTV model, enabling Sales and Finance to report on blended NRR that includes new business — not just renewals and expansions |
-| **Phase 4** | Real-time Salesforce sync | Replace the daily scheduled data refresh with a near-real-time Salesforce integration, giving Sales Managers a live view of deal movements without leaving the Domo environment |
-
----
-
-## About
-
-**Thuy Tu** — Data & FP&A Analyst (Freelance)
-
-CPA, MBA-qualified finance and data professional with 15+ years across SaaS, fintech, and professional services. Specialist in Domo, Power BI, SQL, Salesforce, and financial modelling — with a track record of turning fragmented reporting into decisions that stick.
-
-📧 [thuthuy.tu@gmail.com](mailto:thuthuy.tu@gmail.com)
-🔗 [linkedin.com/in/thuytu](https://www.linkedin.com/in/thuytu)
-📞 (+61) 436 104 308
+- Frequent updates of new charts and dashboards to utilise deliveries to new requests from Sales team.
+- The space would be moved to Domo App given the new launch of the app version.
 
 ---
 
