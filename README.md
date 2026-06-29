@@ -16,29 +16,44 @@ The Company did not have trustworthy source of sales data. The process to verify
 
 **Impact at a glance**
 
-✅ Provided one source of truth on the sales numbers, making the whole company aligned on the sales performance, saving times to resolve conflicting reported numbers.
+✅ One source of truth on the sales numbers, ensuring all teams aligned on the sales performance, 
 
-✅ Automated dashboards provided stakeholders with real time visibility on Sales performance. The interactive feature of the dashboard enable the ability to self-serve for more in-depth analysis without waiting for analytics team. 
+✅ Real-time pipeline visibility on Sales performance to replace week-old snapshots.
+
+✅ Self-serve analytics for all teams for more in-depth analysis without waiting for data team.
+
+✅ Elimiation of manual sale data reconciliation cycle.
 
 ---
 
-## 2. Business Problem
+## 2. Skills Demonstrated
+
+**Domo** `data warehouse`, `Magic ETL`, `SQL`, `Beast mode`, `Charts and Dashboard`, `App`, `Mobile version`
+
+**Salesforce CRM** `Objects` `Workflow` `Opportunity` `Account` `Lead` `Activitiy`
+
+**Sales Operations** `Sales funnel analysis` `Deal velocity & cycle time` `Territory management`
+
+**Soft Skills** `Stakeholder management` `Business-to-data translation` `Data governance & documentation`
+
+
+## 3. Business Problem
 
 Salesforce was used to track sales funnels but information was incomplete and not up to date. Each sales reps tracked their sales progress on their local files and shared it with others when being requested. Sales data was validated and updated manually for monthly reports. Strategic and sales decisions were made by gut feelings without supported data. 
 
 | Problem | Business impact |
 |---|---|
-| 🔴 No trust worthy source of sales data | Time and effort spent on information validating and alignment on regular basic.  |
+| 🔴 No trust worthy data source | Time and effort spent on information validating and alignment on regular basic.  |
 | 🔴 Salesforce was not used properly | The investment on the platform was not justified. |
-| 🔴 No real-time pipeline visibility | Leadership made decisions on week/month-old Salesforce snapshots — by the time data landed, deals had already moved or been lost |
-| 🔴 Finance kept track and updated sales performance manually with no base to forecast | Reported financial and sales data was not reliable.  |
-| 🔴 Reps flew blind on their own targets | Sales representatives had no self-serve view of where they stood against quota, their team's trajectory, or the company's overall performance — reducing accountability and motivation |
-| 🔴 Sales leaders did not have clear visibility on what their team did | Sales leaders had difficulty on managing their team because no records on call, demo or meeting was properly tracked. |
-| 🔴 Strategic and sales decisions were not supported by data | Decisions was not optimal when being made by intuition and assumption. |
+| 🔴 Stale pipeline snapshots | Leadership made decisions on week/month-old Salesforce snapshots — by the time data landed, deals had already moved or been lost |
+| 🔴 Finance kept track and updated sales performance manually with no baseline to forecast | Reported financial and sales data was not reliable.  |
+| 🔴 Reps flew solo | Sales representatives had no proper view of their team's trajectory, or the company's overall performance — reducing accountability and motivation |
+| 🔴 No activity tracking| Call, demo or meetings were not logged. Sales leaders did not have visibility into sales reps's behaviours thus, had difficulty on managing and coaching the team. |
+| 🔴 No baseline for data-driven sales and strategic decisions| Decisions was not optimal when being made by intuition and assumption. |
 
 ---
 
-## 3. Methodology
+## 4. Methodology
 
 1. **Understand the business** Workshop with Sales team to understand the as-is sales process practice and requirements for better visibility to take ownership and better actions.
 
@@ -56,18 +71,6 @@ Salesforce was used to track sales funnels but information was incomplete and no
 
 5. **Validation and put in use**
   
----
-
-## 4. Skills Demonstrated
-
-**Domo** `data warehouse`, `Magic ETL`, `SQL`, `Beast mode`, `Charts and Dashboard`, `App`, `Mobile version`
-
-**Salesforce CRM** `Objects` `Workflow` `Opportunity` `Account` `Lead` `Activitiy`
-
-**Sales Operations** `Sales funnel analysis` `Deal velocity & cycle time` `Territory management`
-
-**Soft Skills** `Stakeholder management` `Business-to-data translation` `Data governance & documentation`
-
 ---
 
 ## 5. Results & Business Recommendations
