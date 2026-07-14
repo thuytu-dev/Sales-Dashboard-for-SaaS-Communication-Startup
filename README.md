@@ -14,6 +14,8 @@
 
 The Company did not have trustworthy source of sales data. The process to verify and confirm sales performance consumed much time from all teams on monthly basic for Board meeting. Once this project was done, Salesforce was put in proper use to track Sales performance at Lead, Opportunity, Account levels, together with Activities of each individuals. Data was filled, validated. Workflow and sales process were set up. Data was then injected to Domo BI to create a space for Sales team to monitor their activities and track the performance of not only themself, but their team and the company as the whole. Finance and Leadership teams could do analysis and forecasting from the BI platform. The space was also set up on Mobile version for on-the-go access. 
 
+<img width="886" height="729" alt="Screenshot 2026-06-25 at 2 57 14 PM" src="https://github.com/user-attachments/assets/f232c797-13fe-4f1a-ac55-435df418da7f" />
+
 **Impact at a glance**
 
 ✅ One source of truth on the sales numbers, ensuring all teams aligned on the sales performance, 
